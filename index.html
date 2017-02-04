@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/angular-ui-tree.min.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-ui-tree.min.js"></script>
+<script
+	src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<!-- Tag scripts -->
+<script type="text/javascript" src="js/tags/auraComponent.js"></script>
+<script type="text/javascript" src="js/tags/auraApplication.js"></script>
+<script type="text/javascript" src="js/tags/auraAttribute.js"></script>
+<script type="text/javascript" src="js/tags/auraDependency.js"></script>
+<script type="text/javascript" src="js/tags/auraEvent.js"></script>
+<script type="text/javascript" src="js/tags/auraInterface.js"></script>
+<script type="text/javascript" src="js/tags/auraMethod.js"></script>
+<script type="text/javascript" src="js/tags/auraSet.js"></script>
+<script type="text/javascript" src="js/tags/auraHtml.js"></script>
+<script type="text/javascript" src="js/tags/auraIf.js"></script>
+<script type="text/javascript" src="js/tags/auraIteration.js"></script>
+<script type="text/javascript" src="js/tags/auraTemplate.js"></script>
+<script type="text/javascript" src="js/tags/auraText.js"></script>
+<script type="text/javascript" src="js/tags/auraUnescapedHtml.js"></script>
+<script type="text/javascript" src="js/tags/auraStorageInit.js"></script>
+<script type="text/javascript" src="js/tags/forceCanvasApp.js"></script>
+<script type="text/javascript" src="js/tags/forceInputField.js"></script>
+<script type="text/javascript" src="js/tags/forceOutputField.js"></script>
+<script type="text/javascript" src="js/tags/forceRecordEdit.js"></script>
+<script type="text/javascript" src="js/tags/forceRecordPreview.js"></script>
+<script type="text/javascript" src="js/tags/forceRecordView.js"></script>
+<script type="text/javascript" src="js/tags/forceChatterFeed.js"></script>
+<script type="text/javascript" src="js/tags/forceChatterFullFeed.js"></script>
+<script type="text/javascript" src="js/tags/forceChatterPublisher.js"></script>
+<script type="text/javascript" src="js/tags/forceCommunityRouteLink.js"></script>
+<script type="text/javascript" src="js/tags/lightningAvatar.js"></script>
+<script type="text/javascript" src="js/tags/lightningBadge.js"></script>
+<script type="text/javascript" src="js/tags/lightningButton.js"></script>
+<script type="text/javascript" src="js/tags/lightningButtonGroup.js"></script>
+<script type="text/javascript" src="js/tags/lightningButtonIcon.js"></script>
+<script type="text/javascript" src="js/tags/lightningButtonMenu.js"></script>
+<script type="text/javascript" src="js/tags/lightningCard.js"></script>
+<script type="text/javascript" src="js/tags/lightningContainer.js"></script>
+
+<script type="text/javascript"
+	src="js/tags/lightningFormattedDateTime.js"></script>
+<script type="text/javascript" src="js/tags/lightningFormattedNumber.js"></script>
+<script type="text/javascript" src="js/tags/lightningIcon.js"></script>
+<script type="text/javascript" src="js/tags/lightningInput.js"></script>
+<script type="text/javascript" src="js/tags/lightningInputRichText.js"></script>
+<script type="text/javascript" src="js/tags/lightningLayout.js"></script>
+<script type="text/javascript" src="js/tags/lightningLayoutItem.js"></script>
+<script type="text/javascript" src="js/tags/lightningMenuItem.js"></script>
+<script type="text/javascript" src="js/tags/lightningSelect.js"></script>
+<script type="text/javascript" src="js/tags/lightningSpinner.js"></script>
+<script type="text/javascript" src="js/tags/lightningTab.js"></script>
+<script type="text/javascript" src="js/tags/lightningTabset.js"></script>
+<script type="text/javascript" src="js/tags/lightningTextarea.js"></script>
+<script type="text/javascript" src="js/tags/ltngRequire.js"></script>
+<script type="text/javascript" src="js/tags/uiActionMenuItem.js"></script>
+<script type="text/javascript" src="js/tags/uiButton.js"></script>
+<script type="text/javascript" src="js/tags/uiCheckboxMenuItem.js"></script>
+<script type="text/javascript" src="js/tags/uiInputCheckbox.js"></script>
+<script type="text/javascript" src="js/tags/uiInputCurrency.js"></script>
+<script type="text/javascript" src="js/tags/uiInputDate.js"></script>
+<script type="text/javascript" src="js/tags/uiInputDateTime.js"></script>
+<script type="text/javascript" src="js/tags/uiInputDefaultError.js"></script>
+<script type="text/javascript" src="js/tags/uiInputEmail.js"></script>
+<script type="text/javascript" src="js/tags/uiInputNumber.js"></script>
+<script type="text/javascript" src="js/tags/uiInputPhone.js"></script>
+<script type="text/javascript" src="js/tags/uiInputRadio.js"></script>
+<script type="text/javascript" src="js/tags/uiInputRichText.js"></script>
+<script type="text/javascript" src="js/tags/uiInputSecret.js"></script>
+<script type="text/javascript" src="js/tags/uiInputSelect.js"></script>
+<script type="text/javascript" src="js/tags/uiInputSelectOption.js"></script>
+<script type="text/javascript" src="js/tags/uiInputText.js"></script>
+<script type="text/javascript" src="js/tags/uiInputTextArea.js"></script>
+<script type="text/javascript" src="js/tags/uiInputURL.js"></script>
+<script type="text/javascript" src="js/tags/uiMenu.js"></script>
+<script type="text/javascript" src="js/tags/uiMenuItem.js"></script>
+<script type="text/javascript" src="js/tags/uiMenuItemSeparator.js"></script>
+<script type="text/javascript" src="js/tags/uiMenuList.js"></script>
+<script type="text/javascript" src="js/tags/uiMenuTrigger.js"></script>
+<script type="text/javascript" src="js/tags/uiMenuTriggerLink.js"></script>
+<script type="text/javascript" src="js/tags/uiMessage.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputCheckbox.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputCurrency.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputDate.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputDateTime.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputEmail.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputNumber.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputPhone.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputRichText.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputText.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputTextArea.js"></script>
+<script type="text/javascript" src="js/tags/uiOutputURL.js"></script>
+<script type="text/javascript" src="js/tags/uiRadioMenuItem.js"></script>
+<script type="text/javascript" src="js/tags/uiScrollerWrapper.js"></script>
+<script type="text/javascript" src="js/tags/uiSpinner.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Tag scripts -->
+
+<title>Lightning UI Builder</title>
+</head>
+<body>
+	<div ng-app="lcbApp" ng-controller="lcbController">
+		<!-- Nested Node templates -->
+		<script type="text/ng-template" id="nodes_renderer1.html">
+  <div ui-tree-handle class="tree-node tree-node-content">
+    
+	<h4><span style="white-space: normal" title="{{node.description}}" class="label label-default">{{node.title+' '+node.extras}}</span></h4>
+			
+  </div>
+  <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+    <li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer1.html'" ng-show="visible(node)">
+    </li>
+  </ol>
+</script>
+		<script type="text/ng-template" id="nodes_renderer2.html">
+  <div class="tree-node">
+    <div class="pull-left tree-handle" ui-tree-handle>
+		<a class="btn btn-default btn-xs" title="Drag here">
+		<span class="glyphicon glyphicon-move"></span>
+		</a>
+    </div>
+    <div class="tree-node-content">
+      <a class="btn btn-default btn-xs" data-nodrag ng-click="toggle(this)">
+        <span class="glyphicon" ng-class="{
+          'glyphicon-chevron-right': collapsed,
+          'glyphicon-chevron-down': !collapsed
+          }">
+        </span>
+      </a>
+
+    <a href="#" title="click to set properties" ng-click="setProperties(this)"><span ng-class='node.selected?"label label-success":"label label-default"' style="font-size:100%">{{node.title}}</span></a>
+
+    <a class="btn btn-danger btn-xs" data-nodrag ng-click="removeNode(this);clearProperties()"><span class="glyphicon glyphicon-trash"></span></a>
+    
+    </div>
+  </div>
+  <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+    <li ng-repeat="node in node.nodes" ui-tree-node data-expand-on-hover="true" ng-include="'nodes_renderer2.html'">
+    </li>
+  </ol>
+</script>
+		<!-- Nested Node templates -->
+		<!-- Navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Lightning Component UI Builder <small>Spring 17 (API version 39.0)</small></a>
+					
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+				
+      			<li><a href="#"><span class="fa fa-youtube-play fa-lg"></span> How to use</a></li>
+      			<li><a href="https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm" target="_blank"><span class="glyphicon glyphicon-book"></span> Reference</a></li>
+    			<li><a href="#"><span class="fa fa-github fa-lg"></span></a></li>
+    			<li><a href="#"><span class="fa fa-facebook-square fa-lg"></span></a></li>
+    			<li><a href="#"><span class="fa fa-twitter fa-lg"></span></a></li>
+    			<li><a href="#"><span class="fa fa-google-plus-official fa-lg"></span></a></li>
+    </ul>
+			</div>
+		</nav>
+
+		<div class="row">
+
+			<!-- Column 1 for list of tags -->
+			<div class="col-md-2">
+				<center>
+					<h4>Tags</h4>
+
+				</center>
+				<div class="form-group input-group-sm">
+					<input ng-model="query" placeholder="Search.." type="text"
+						class="form-control">
+				</div>
+
+				<div>
+					<div ui-tree="tagTreeOptions" id="tree1-root"
+						data-clone-enabled="true" data-nodrop-enabled="true">
+						<ol ui-tree-nodes="" ng-model="tree1">
+							<li ng-repeat="node in tree1" ui-tree-node
+								ng-include="'nodes_renderer1.html'" ng-show="visible(node)"></li>
+						</ol>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Column 2 for component tree -->
+			<div class="col-md-7">
+
+				<uib-tabset active="active"> <uib-tab index="0" heading="Designer">
+				<h5>Drag & Drop tags in the space below</h5>
+
+				<div ui-tree="treeOptions" id="tree2-root" data-clone-enabled="true">
+					<ol ui-tree-nodes="" ng-model="tree2">
+						<li ng-repeat="node in tree2" ui-tree-node
+							data-expand-on-hover="true" ng-include="'nodes_renderer2.html'"></li>
+					</ol>
+				</div>
+
+				<!--  <pre class="code">{{ tree2 | json }}</pre>  -->
+				</uib-tab>
+				 <uib-tab index="1"
+					heading="Source Code" ng-click="showSourceCode()">
+
+				<div class="row">
+					<button type="button" class="pull-right btn btn-default"
+						ng-click="showSourceCode()">
+						<span class="glyphicon glyphicon-refresh"></span> Refresh
+					</button>
+				</div>
+				<div class="row">
+					<pre class="code">{{ sourceCode }}</pre>
+				</div>
+
+				</uib-tab> </uib-tabset>
+
+
+			</div>
+
+			<!-- Column 3 for component properties -->
+			<div class="col-md-3">
+				<center>
+					<h4>Properties</h4>
+					<div>{{tagName}}</div>
+				</center>
+
+				<div class="form-group input-group-sm">
+					<input ng-model="queryProp" placeholder="Search.." type="text"
+						class="form-control">
+					<ul class="list-group">
+						<li class="list-group-item" ng-repeat="attr in attributes"
+							ng-show="isPropVisible(attr)"><font style="color: red"
+							ng-if="attr.isRequired">*&nbsp;</font><label for="{{attr.name}}">{{attr.name}}</label>
+							<!-- <a class="btn btn-default btn-xs" data-toggle="popover" data-container="body" data-trigger="focus" data-original-title="{{attr.name}}" data-content="{{attr.description}}"><span class="glyphicon glyphicon-info-sign"></span></a> -->
+							<button uib-popover="{{attr.description}}"
+								popover-trigger="'focus'" popover-placement="left-top"
+								popover-title="{{attr.name}}" type="button"
+								class="btn btn-default  btn-xs">
+								<span class="glyphicon glyphicon-info-sign"></span>
+							</button> <input type="text" class="form-control input-sm"
+							id="{{attr.name}}" ng-if="attr.validValues.length==0"
+							ng-model="attr.value" placeholder="{{attr.type}}"> <select
+							class="form-control input-sm" ng-model="attr.value"
+							ng-if="attr.validValues.length!=0 && !attr.isMultiValued">
+								<option ng-repeat="x in attr.validValues" value="{{x}}">{{x}}</option>
+						</select> <select multiple class="form-control input-sm"
+							ng-model="attr.value"
+							ng-if="attr.validValues.length!=0 && attr.isMultiValued">
+								<option ng-repeat="x in attr.validValues" value="{{x}}">{{x}}</option>
+						</select></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- Bootstrap row -->
+
+	</div>
+</body>
+</html>
