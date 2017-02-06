@@ -1,6 +1,5 @@
 # lightning-ui-builder
-Drag and drop interface for building Lightning Component UI for Salesforce
-
+A drag and drop gui builder and code generator for Salesforce Lightning Component Framework
 Website : https://vignaesh01.github.io/lightning-ui-builder/
 
 How to Use Video : https://youtu.be/RbHDa6mBoYI
