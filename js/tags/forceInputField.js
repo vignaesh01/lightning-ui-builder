@@ -6,7 +6,15 @@ var forceInputField = {
 	'description' : 'A component that provides a concrete type-specific input component implementation based on the data to which it is bound.',
 	"selected" : false,
 	'attributes' : [
-			
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'class',
 				'type' : 'String',

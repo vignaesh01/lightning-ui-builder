@@ -7,6 +7,15 @@ var uiInputSelect = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'class',
 				'type' : 'String',
 				'description' : 'A CSS style to be attached to the component. This style is added in addition to base styles output by the component.',
@@ -54,7 +63,7 @@ var uiInputSelect = {
 			{
 				'name' : 'multiple',
 				'type' : 'Boolean',
-				'description' : 'Specifies whether the input is a multiple select. Default value is “false”.',
+				'description' : 'Specifies whether the input is a multiple select. Default value is false.',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,

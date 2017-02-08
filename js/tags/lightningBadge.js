@@ -7,6 +7,15 @@ var lightningBadge = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'class',
 				'type' : 'String',
 				'description' : 'A CSS class for the outer element, in addition to the component\'s base classes.',

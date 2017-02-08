@@ -7,6 +7,15 @@ var lightningContainer = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'alternativeText',
 				'type' : 'String',
 				'description' : 'Used for alternative text in accessibility scenarios.',
@@ -15,7 +24,7 @@ var lightningContainer = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',

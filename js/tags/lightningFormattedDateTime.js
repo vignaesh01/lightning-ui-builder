@@ -3,11 +3,19 @@
  */
 var lightningFormattedDateTime = {
 	'title' : 'lightning:formattedDateTime',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'A lightning:formattedDateTime component displays formatted date and time.',
 	"selected" : false,
 	'attributes' : [
-			
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'day',
 				'type' : 'String',
@@ -15,7 +23,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','numeric', '2-digit']
+				'validValues' : [ '', 'numeric', '2-digit' ]
 			},
 			{
 				'name' : 'era',
@@ -24,7 +32,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','narrow', 'short', 'long']
+				'validValues' : [ '', 'narrow', 'short', 'long' ]
 			},
 			{
 				'name' : 'hour',
@@ -33,7 +41,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','numeric', '2-digit']
+				'validValues' : [ '', 'numeric', '2-digit' ]
 			},
 			{
 				'name' : 'hour12',
@@ -51,7 +59,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','numeric', '2-digit']
+				'validValues' : [ '', 'numeric', '2-digit' ]
 			},
 			{
 				'name' : 'month',
@@ -60,7 +68,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','2-digit','narrow', 'short', 'long']
+				'validValues' : [ '', '2-digit', 'narrow', 'short', 'long' ]
 			},
 			{
 				'name' : 'second',
@@ -69,7 +77,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','numeric', '2-digit']
+				'validValues' : [ '', 'numeric', '2-digit' ]
 			},
 			{
 				'name' : 'timeZone',
@@ -87,7 +95,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','short','long']
+				'validValues' : [ '', 'short', 'long' ]
 			},
 			{
 				'name' : 'value',
@@ -104,7 +112,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','narrow', 'short', 'long']
+				'validValues' : [ '', 'narrow', 'short', 'long' ]
 			}, {
 				'name' : 'year',
 				'type' : 'String',
@@ -112,7 +120,7 @@ var lightningFormattedDateTime = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','numeric', '2-digit']
+				'validValues' : [ '', 'numeric', '2-digit' ]
 			}
 
 	],

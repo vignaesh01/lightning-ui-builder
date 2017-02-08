@@ -7,6 +7,15 @@ var uiInputRichText = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'class',
 				'type' : 'String',
 				'description' : 'A CSS style to be attached to the component. This style is added in addition to base styles output by the component.',
@@ -18,7 +27,7 @@ var uiInputRichText = {
 			{
 				'name' : 'cols',
 				'type' : 'Integer',
-				'description' : 'The width of the text area, which is defined by the number of characters to display in a single row at a time. Default value is “20”.',
+				'description' : 'The width of the text area, which is defined by the number of characters to display in a single row at a time. Default value is 20.',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
@@ -90,7 +99,7 @@ var uiInputRichText = {
 			{
 				'name' : 'readonly',
 				'type' : 'Boolean',
-				'description' : 'Specifies whether the text area should be rendered as read-only. Default value is “false”.',
+				'description' : 'Specifies whether the text area should be rendered as read-only. Default value is false.',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
@@ -126,7 +135,7 @@ var uiInputRichText = {
 			{
 				'name' : 'rows',
 				'type' : 'Integer',
-				'description' : 'The height of the text area, which is defined by the number of rows to display at a time. Default value is “2”.',
+				'description' : 'The height of the text area, which is defined by the number of rows to display at a time. Default value is 2.',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,

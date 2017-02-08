@@ -3,10 +3,19 @@
  */
 var lightningButtonMenu = {
 	'title' : 'lightning:buttonMenu',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'A lightning:buttonMenu represents a button that when clicked displays a dropdown menu of actions or functions that a user can access.',
 	"selected" : false,
 	'attributes' : [
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'accesskey',
 				'type' : 'String',
@@ -25,7 +34,7 @@ var lightningButtonMenu = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -60,7 +69,7 @@ var lightningButtonMenu = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','xx-small','x-small', 'medium', 'large']
+				'validValues' : [ '', 'xx-small', 'x-small', 'medium', 'large' ]
 			},
 			{
 				'name' : 'menuAlignment',
@@ -69,7 +78,7 @@ var lightningButtonMenu = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','left', 'center', 'right']
+				'validValues' : [ '', 'left', 'center', 'right' ]
 			},
 			{
 				'name' : 'name',
@@ -141,7 +150,8 @@ var lightningButtonMenu = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','bare', 'container', 'border', 'border-filled', 'bare-inverse',  'border-inverse']
+				'validValues' : [ '', 'bare', 'container', 'border',
+						'border-filled', 'bare-inverse', 'border-inverse' ]
 			},
 			{
 				'name' : 'visible',

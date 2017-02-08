@@ -3,10 +3,19 @@
  */
 var lightningMenuItem = {
 	'title' : 'lightning:menuItem',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'Represents a list item in a menu.',
 	"selected" : false,
 	'attributes' : [
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'accesskey',
 				'type' : 'String',
@@ -16,7 +25,7 @@ var lightningMenuItem = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'checked',
 				'type' : 'Boolean',

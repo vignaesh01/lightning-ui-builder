@@ -3,11 +3,20 @@
  */
 var lightningFormattedNumber = {
 	'title' : 'lightning:formattedNumber',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'Displays formatted numbers for decimals, currency, and percentages.',
 	"selected" : false,
 	'attributes' : [
-			
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+
 			{
 				'name' : 'currencyCode',
 				'type' : 'String',
@@ -24,7 +33,7 @@ var lightningFormattedNumber = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','symbol', 'code', 'name']
+				'validValues' : [ '', 'symbol', 'code', 'name' ]
 			},
 			{
 				'name' : 'maximumFractionDigits',
@@ -42,7 +51,9 @@ var lightningFormattedNumber = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21']
+				'validValues' : [ '', '1', '2', '3', '4', '5', '6', '7', '8',
+						'9', '10', '11', '12', '13', '14', '15', '16', '17',
+						'18', '19', '20', '21' ]
 			},
 			{
 				'name' : 'minimumFractionDigits',
@@ -60,7 +71,9 @@ var lightningFormattedNumber = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21']
+				'validValues' : [ '', '1', '2', '3', '4', '5', '6', '7', '8',
+						'9', '10', '11', '12', '13', '14', '15', '16', '17',
+						'18', '19', '20', '21' ]
 			},
 			{
 				'name' : 'minimumSignificantDigits',
@@ -69,7 +82,9 @@ var lightningFormattedNumber = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21']
+				'validValues' : [ '', '1', '2', '3', '4', '5', '6', '7', '8',
+						'9', '10', '11', '12', '13', '14', '15', '16', '17',
+						'18', '19', '20', '21' ]
 			},
 			{
 				'name' : 'style',
@@ -78,7 +93,7 @@ var lightningFormattedNumber = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','decimal', 'currency',  'percent']
+				'validValues' : [ '', 'decimal', 'currency', 'percent' ]
 			}, {
 				'name' : 'value',
 				'type' : 'BigDecimal',

@@ -3,10 +3,19 @@
  */
 var lightningTabset = {
 	'title' : 'lightning:tabset',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'Represents a list of tabs.',
 	"selected" : false,
 	'attributes' : [
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -41,7 +50,7 @@ var lightningTabset = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','default' , 'scoped']
+				'validValues' : [ '', 'default', 'scoped' ]
 			}
 
 	],

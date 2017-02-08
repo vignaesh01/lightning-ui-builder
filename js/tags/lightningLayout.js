@@ -6,7 +6,15 @@ var lightningLayout = {
 	'description' : 'Represents a responsive grid system for arranging containers on a page.',
 	"selected" : false,
 	'attributes' : [
-			
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -23,7 +31,7 @@ var lightningLayout = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','center', 'space', 'spread', 'end']
+				'validValues' : [ '', 'center', 'space', 'spread', 'end' ]
 			},
 			{
 				'name' : 'multipleRows',
@@ -41,7 +49,7 @@ var lightningLayout = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','small','medium',  'large']
+				'validValues' : [ '', 'small', 'medium', 'large' ]
 			},
 			{
 				'name' : 'verticalAlign',
@@ -50,7 +58,7 @@ var lightningLayout = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','start', 'center', 'end', 'stretch']
+				'validValues' : [ '', 'start', 'center', 'end', 'stretch' ]
 			}
 
 	],

@@ -7,6 +7,15 @@ var lightningButtonIcon = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'accesskey',
 				'type' : 'String',
 				'description' : 'Specifies a shortcut key to activate or focus an element.',
@@ -24,7 +33,7 @@ var lightningButtonIcon = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -104,7 +113,8 @@ var lightningButtonIcon = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','xx-small','x-small', 'small', 'medium', 'large']
+				'validValues' : [ '', 'xx-small', 'x-small', 'small', 'medium',
+						'large' ]
 			},
 			{
 				'name' : 'tabindex',
@@ -131,7 +141,7 @@ var lightningButtonIcon = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','button', 'reset', 'submit']
+				'validValues' : [ '', 'button', 'reset', 'submit' ]
 			},
 			{
 				'name' : 'value',
@@ -149,7 +159,8 @@ var lightningButtonIcon = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','bare', 'container', 'border', 'border-filled', 'bare-inverse',  'border-inverse']
+				'validValues' : [ '', 'bare', 'container', 'border',
+						'border-filled', 'bare-inverse', 'border-inverse' ]
 			} ],
 	'nodes' : []
 };

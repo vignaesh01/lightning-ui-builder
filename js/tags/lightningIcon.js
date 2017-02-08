@@ -7,6 +7,15 @@ var lightningIcon = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'alternativeText',
 				'type' : 'String',
 				'description' : 'The alternative text used to describe the icon. This text should describe what happens when you click the button, for example \'Upload File\', not what the icon looks like, \'Paperclip\'.',
@@ -15,7 +24,7 @@ var lightningIcon = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -41,7 +50,8 @@ var lightningIcon = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','xx-small', 'x-small', 'small', 'medium',  'large']
+				'validValues' : [ '', 'xx-small', 'x-small', 'small', 'medium',
+						'large' ]
 			},
 			{
 				'name' : 'title',
@@ -59,7 +69,7 @@ var lightningIcon = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','bare', 'warning', 'error']
+				'validValues' : [ '', 'bare', 'warning', 'error' ]
 			}
 
 	],

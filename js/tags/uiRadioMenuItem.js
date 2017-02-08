@@ -6,7 +6,15 @@ var uiRadioMenuItem = {
 	'description' : 'A menu item with a radio button that indicates a mutually exclusive selection and can be used to invoke an action. This component is nested in a ui:menu component.',
 	"selected" : false,
 	'attributes' : [
-
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'class',
 				'type' : 'String',

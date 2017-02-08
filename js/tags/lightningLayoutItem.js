@@ -6,7 +6,16 @@ var lightningLayoutItem = {
 	'description' : 'The basic element of lightning:layout.',
 	"selected" : false,
 	'attributes' : [
-			
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -23,7 +32,8 @@ var lightningLayoutItem = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','auto', 'shrink', 'no-shrink', 'grow', 'no-grow', 'no-flex']
+				'validValues' : [ '', 'auto', 'shrink', 'no-shrink', 'grow',
+						'no-grow', 'no-flex' ]
 			},
 			{
 				'name' : 'largeDeviceSize',
@@ -32,7 +42,8 @@ var lightningLayoutItem = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','1','2','3','4','5','6','7','8','9','10','11','12']
+				'validValues' : [ '', '1', '2', '3', '4', '5', '6', '7', '8',
+						'9', '10', '11', '12' ]
 			},
 			{
 				'name' : 'mediumDeviceSize',
@@ -41,7 +52,8 @@ var lightningLayoutItem = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','1','2','3','4','5','6','7','8','9','10','11','12']
+				'validValues' : [ '', '1', '2', '3', '4', '5', '6', '7', '8',
+						'9', '10', '11', '12' ]
 			},
 			{
 				'name' : 'padding',
@@ -50,7 +62,9 @@ var lightningLayoutItem = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','horizontal-small', 'horizontal-medium', 'horizontal-large', 'around-small', 'around-medium', 'around-large']
+				'validValues' : [ '', 'horizontal-small', 'horizontal-medium',
+						'horizontal-large', 'around-small', 'around-medium',
+						'around-large' ]
 			},
 			{
 				'name' : 'size',
@@ -59,7 +73,8 @@ var lightningLayoutItem = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','1','2','3','4','5','6','7','8','9','10','11','12']
+				'validValues' : [ '', '1', '2', '3', '4', '5', '6', '7', '8',
+						'9', '10', '11', '12' ]
 			},
 			{
 				'name' : 'smallDeviceSize',
@@ -68,7 +83,8 @@ var lightningLayoutItem = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','1','2','3','4','5','6','7','8','9','10','11','12']
+				'validValues' : [ '', '1', '2', '3', '4', '5', '6', '7', '8',
+						'9', '10', '11', '12' ]
 			}
 
 	],

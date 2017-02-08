@@ -7,6 +7,15 @@ var uiInputNumber = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'class',
 				'type' : 'String',
 				'description' : 'A CSS style to be attached to the component. This style is added in addition to base styles output by the component.',
@@ -36,7 +45,7 @@ var uiInputNumber = {
 			{
 				'name' : 'format',
 				'type' : 'String',
-				'description' : 'The format of the number. For example, format=“.00” displays the number followed by two decimal places. If not specified, the Locale default format will be used.',
+				'description' : 'The format of the number. For example, format=.00 displays the number followed by two decimal places. If not specified, the Locale default format will be used.',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,

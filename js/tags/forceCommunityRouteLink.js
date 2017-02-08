@@ -6,7 +6,15 @@ var forceCommunityRouteLink = {
 	'description' : 'Sets an HTML anchor tag with an href attribute that’s automatically generated from the provided record ID. Use it to improve SEO link equity in template-based communities.',
 	"selected" : false,
 	'attributes' : [
-			
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'class',
 				'type' : 'String',

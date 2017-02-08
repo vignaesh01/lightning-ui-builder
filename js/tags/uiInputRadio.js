@@ -7,6 +7,15 @@ var uiInputRadio = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'class',
 				'type' : 'String',
 				'description' : 'A CSS style to be attached to the component. This style is added in addition to base styles output by the component.',
@@ -99,7 +108,7 @@ var uiInputRadio = {
 			{
 				'name' : 'value',
 				'type' : 'Boolean',
-				'description' : 'Indicates whether the status of the option is selected. Default value is “false”.',
+				'description' : 'Indicates whether the status of the option is selected. Default value is false.',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,

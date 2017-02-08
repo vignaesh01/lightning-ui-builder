@@ -7,6 +7,15 @@ var lightningSpinner = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'alternativeText',
 				'type' : 'String',
 				'description' : 'The alternative text used to describe the reason for the wait and need for a spinner.',
@@ -15,7 +24,7 @@ var lightningSpinner = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -32,7 +41,7 @@ var lightningSpinner = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','small', 'medium', 'large']
+				'validValues' : [ '', 'small', 'medium', 'large' ]
 			},
 			{
 				'name' : 'variant',
@@ -41,7 +50,7 @@ var lightningSpinner = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','brand' , 'inverse']
+				'validValues' : [ '', 'brand', 'inverse' ]
 			}
 
 	],

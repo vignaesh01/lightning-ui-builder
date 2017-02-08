@@ -3,10 +3,19 @@
  */
 var forceRecordPreview = {
 	'title' : 'force:recordPreview',
-	'extras':'(Developer Preview)',
+	'extras' : '(Developer Preview)',
 	'description' : 'Use the force:recordPreview component to define the parameters for accessing, modifying, or creating a record using Lightning Data Service.',
 	"selected" : false,
 	'attributes' : [
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'fields',
 				'type' : 'String[]',
@@ -32,7 +41,7 @@ var forceRecordPreview = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : true,
-				'validValues' : ['','FULL','COMPACT']
+				'validValues' : [ '', 'FULL', 'COMPACT' ]
 			},
 			{
 				'name' : 'mode',
@@ -41,7 +50,7 @@ var forceRecordPreview = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','VIEW','EDIT']
+				'validValues' : [ '', 'VIEW', 'EDIT' ]
 			},
 			{
 				'name' : 'recordId',

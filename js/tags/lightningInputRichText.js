@@ -3,10 +3,19 @@
  */
 var lightningInputRichText = {
 	'title' : 'lightning:inputRichText',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'A WYSIWYG editor with a customizable toolbar for entering rich text.',
 	"selected" : false,
 	'attributes' : [
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'accesskey',
 				'type' : 'String',
@@ -16,7 +25,7 @@ var lightningInputRichText = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'disabled',
 				'type' : 'Boolean',
@@ -33,7 +42,8 @@ var lightningInputRichText = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : true,
-				'validValues' : ['','FORMAT_FONT','FORMAT_TEXT','FORMAT_BODY','ALIGN_TEXT','REMOVE_FORMATTING']
+				'validValues' : [ '', 'FORMAT_FONT', 'FORMAT_TEXT',
+						'FORMAT_BODY', 'ALIGN_TEXT', 'REMOVE_FORMATTING' ]
 			},
 			{
 				'name' : 'onblur',

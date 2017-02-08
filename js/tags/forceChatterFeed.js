@@ -7,13 +7,22 @@ var forceChatterFeed = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'feedDesign',
 				'type' : 'String',
 				'description' : 'Valid values include DEFAULT ( shows inline comments on desktop, a bit more detail ) or BROWSE ( primarily an overview of the feed items )',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','DEFAULT ','BROWSE ']
+				'validValues' : [ '', 'DEFAULT ', 'BROWSE ' ]
 			},
 			{
 				'name' : 'subjectId',
@@ -31,7 +40,7 @@ var forceChatterFeed = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','News', 'Home', 'Record', 'To']
+				'validValues' : [ '', 'News', 'Home', 'Record', 'To' ]
 			}
 
 	],

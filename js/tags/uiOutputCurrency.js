@@ -7,6 +7,15 @@ var uiOutputCurrency = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'class',
 				'type' : 'String',
 				'description' : 'A CSS style to be attached to the component. This style is added in addition to base styles output by the component.',
@@ -18,7 +27,7 @@ var uiOutputCurrency = {
 			{
 				'name' : 'currencyCode',
 				'type' : 'String',
-				'description' : 'The ISO 4217 currency code specified as a String, e.g. “USD”.',
+				'description' : 'The ISO 4217 currency code specified as a String, e.g. "USD".',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
@@ -36,7 +45,7 @@ var uiOutputCurrency = {
 			{
 				'name' : 'format',
 				'type' : 'String',
-				'description' : 'The format of the number. For example, format=“.00” displays the number followed by two decimal places. If not specified, the default format based on the browser\'s locale will be used.',
+				'description' : 'The format of the number. For example, format=".00" displays the number followed by two decimal places. If not specified, the default format based on the browser\'s locale will be used.',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,

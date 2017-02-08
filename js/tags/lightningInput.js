@@ -3,10 +3,19 @@
  */
 var lightningInput = {
 	'title' : 'lightning:input',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'Represents interactive controls that accept user input depending on the type attribute.',
 	"selected" : false,
 	'attributes' : [
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'accept',
 				'type' : 'String',
@@ -25,7 +34,7 @@ var lightningInput = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'checked',
 				'type' : 'Boolean',
@@ -285,7 +294,10 @@ var lightningInput = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','Checkbox','Date','Datetime-local','Email','File','Month','Number','Password','Radio','Range','Search','Tel','Text','Time','Toggle','URL','Week']
+				'validValues' : [ '', 'Checkbox', 'Date', 'Datetime-local',
+						'Email', 'File', 'Month', 'Number', 'Password',
+						'Radio', 'Range', 'Search', 'Tel', 'Text', 'Time',
+						'Toggle', 'URL', 'Week' ]
 			},
 			{
 				'name' : 'validity',

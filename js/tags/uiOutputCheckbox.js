@@ -7,9 +7,18 @@ var uiOutputCheckbox = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'altChecked',
 				'type' : 'String',
-				'description' : 'The alternate text description when the checkbox is checked. Default value is “True”.',
+				'description' : 'The alternate text description when the checkbox is checked. Default value is "True".',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
@@ -18,13 +27,13 @@ var uiOutputCheckbox = {
 			{
 				'name' : 'altUnchecked',
 				'type' : 'String',
-				'description' : 'The alternate text description when the checkbox is unchecked. Default value is “False”.',
+				'description' : 'The alternate text description when the checkbox is unchecked. Default value is "False".',
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',

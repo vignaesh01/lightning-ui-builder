@@ -7,6 +7,15 @@ var lightningButton = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'accesskey',
 				'type' : 'String',
 				'description' : 'Specifies a shortcut key to activate or focus an element.',
@@ -15,7 +24,7 @@ var lightningButton = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -50,7 +59,7 @@ var lightningButton = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','left','right']
+				'validValues' : [ '', 'left', 'right' ]
 			},
 			{
 				'name' : 'label',
@@ -122,7 +131,7 @@ var lightningButton = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','button', 'reset', 'submit']
+				'validValues' : [ '', 'button', 'reset', 'submit' ]
 			},
 			{
 				'name' : 'value',
@@ -140,7 +149,7 @@ var lightningButton = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','base', 'neutral', 'brand', 'destructive']
+				'validValues' : [ '', 'base', 'neutral', 'brand', 'destructive' ]
 			}
 
 	],

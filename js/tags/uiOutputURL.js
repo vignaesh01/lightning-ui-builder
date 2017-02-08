@@ -7,6 +7,15 @@ var uiOutputURL = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'alt',
 				'type' : 'String',
 				'description' : 'The alternate text description for image (used when there is no label)',
@@ -58,7 +67,7 @@ var uiOutputURL = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','_blank','_parent', '_self', '_top']
+				'validValues' : [ '', '_blank', '_parent', '_self', '_top' ]
 			},
 			{
 				'name' : 'title',

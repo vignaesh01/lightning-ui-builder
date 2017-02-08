@@ -7,13 +7,22 @@ var forceChatterPublisher = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'context',
 				'type' : 'String',
 				'description' : 'The context in which the component is being displayed (RECORD or GLOBAL). RECORD is for a record feed, and GLOBAL is for all other feed types. This attribute is case-sensitive.',
 				'value' : '',
 				'isRequired' : true,
 				'isMultiValued' : false,
-				'validValues' : ['RECORD','GLOBAL']
+				'validValues' : [ 'RECORD', 'GLOBAL' ]
 			}, {
 				'name' : 'recordId',
 				'type' : 'String',

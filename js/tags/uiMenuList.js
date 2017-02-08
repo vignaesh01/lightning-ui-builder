@@ -7,6 +7,15 @@ var uiMenuList = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'autoPosition',
 				'type' : 'Boolean',
 				'description' : 'Move the popup target up when there is not enough space at the bottom to display. Note: even if autoPosition is set to false, popup will still position the menu relative to the trigger. To override default positioning, use manualPosition attribute.',
@@ -15,7 +24,7 @@ var uiMenuList = {
 				'isMultiValued' : false,
 				'validValues' : [ '', 'false', 'true' ]
 			},
-						
+
 			{
 				'name' : 'class',
 				'type' : 'String',

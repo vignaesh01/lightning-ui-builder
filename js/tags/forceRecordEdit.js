@@ -7,6 +7,15 @@ var forceRecordEdit = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'recordId',
 				'type' : 'String',
 				'description' : 'The Id of the record to load, optional if record attribute is specified.',

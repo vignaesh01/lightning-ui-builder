@@ -7,6 +7,15 @@ var lightningSelect = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'accesskey',
 				'type' : 'String',
 				'description' : 'Specifies a shortcut key to activate or focus an element.',
@@ -15,7 +24,7 @@ var lightningSelect = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',

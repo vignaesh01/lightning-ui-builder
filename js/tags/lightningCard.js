@@ -7,6 +7,15 @@ var lightningCard = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'actions',
 				'type' : 'Component[]',
 				'description' : 'Actions are components such as button or buttonIcon. Actions are displayed in the header.',
@@ -15,7 +24,7 @@ var lightningCard = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -59,7 +68,7 @@ var lightningCard = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','base' ,'narrow']
+				'validValues' : [ '', 'base', 'narrow' ]
 			}
 
 	],

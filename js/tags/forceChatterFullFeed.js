@@ -7,6 +7,15 @@ var forceChatterFullFeed = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'handleNavigationEvents',
 				'type' : 'Boolean',
 				'description' : 'Determines whether the component can handle navigation events for entities and URLs. If set to true then navigation events occur in the entity or URL being opened in a new window.',
@@ -31,7 +40,7 @@ var forceChatterFullFeed = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','News', 'Home', 'Record', 'To']
+				'validValues' : [ '', 'News', 'Home', 'Record', 'To' ]
 			}
 
 	],

@@ -104,14 +104,14 @@ app.controller('lcbController', function($scope, lcbHelper) {
 
 app.service('lcbHelper', function() {
 	var code = '';
-	this.generateCode = function(compArr) {
+	this.generateCode = function(compArr,indent) {
 
 		if (!compArr || compArr.length == 0) {
 			return;
 		}
 
 		for (var i = 0; i < compArr.length; i++) {
-			var startTag = '<' + compArr[i].title;
+			var startTag = indent+'<' + compArr[i].title;
 
 			if (compArr[i].attributes) {
 				for (var a = 0; a < compArr[i].attributes.length; a++) {
@@ -130,21 +130,21 @@ app.service('lcbHelper', function() {
 					}
 
 				}
-			}
+			}			
 
 			startTag += '>';
 			code += startTag;
 			code += '\n';
 
-			this.generateCode(compArr[i].nodes);
-			code += '</' + compArr[i].title + '>';
+			this.generateCode(compArr[i].nodes,indent+"\t");
+			code += indent+'</' + compArr[i].title + '>';
 			code += '\n';
 		}
 	},
 
 	this.getCode = function(compArr) {
 		code = '';
-		this.generateCode(compArr);
+		this.generateCode(compArr,"");
 		return code;
 	}, this.deselectTheTree = function(compArr) {
 

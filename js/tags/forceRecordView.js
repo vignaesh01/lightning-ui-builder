@@ -7,6 +7,15 @@ var forceRecordView = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'record',
 				'type' : 'SObjectRow',
 				'description' : 'The record (SObject) to load, optional if recordId attribute is specified.',
@@ -31,7 +40,7 @@ var forceRecordView = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','FULL', 'MINI']
+				'validValues' : [ '', 'FULL', 'MINI' ]
 			}
 
 	],

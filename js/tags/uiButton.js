@@ -7,6 +7,15 @@ var uiButton = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'accesskey',
 				'type' : 'String',
 				'description' : 'The keyboard access key that puts the button in focus. When the button is in focus, pressing Enter clicks the button.',
@@ -15,7 +24,7 @@ var uiButton = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'buttonTitle',
 				'type' : 'String',
@@ -32,7 +41,7 @@ var uiButton = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','reset', 'submit', 'button']
+				'validValues' : [ '', 'reset', 'submit', 'button' ]
 			},
 			{
 				'name' : 'class',

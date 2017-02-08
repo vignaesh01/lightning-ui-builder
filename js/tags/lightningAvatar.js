@@ -7,6 +7,15 @@ var lightningAvatar = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'alternativeText',
 				'type' : 'String',
 				'description' : 'The alternative text used to describe the avatar, which is displayed as hover text on the image.',
@@ -15,7 +24,7 @@ var lightningAvatar = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'class',
 				'type' : 'String',
@@ -32,7 +41,7 @@ var lightningAvatar = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','x-small', 'small', 'medium',  'large']
+				'validValues' : [ '', 'x-small', 'small', 'medium', 'large' ]
 			},
 			{
 				'name' : 'src',
@@ -50,7 +59,7 @@ var lightningAvatar = {
 				'value' : '',
 				'isRequired' : false,
 				'isMultiValued' : false,
-				'validValues' : ['','empty', 'circle', 'square']
+				'validValues' : [ '', 'empty', 'circle', 'square' ]
 			}
 
 	],

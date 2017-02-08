@@ -7,6 +7,15 @@ var ltngRequire = {
 	"selected" : false,
 	'attributes' : [
 			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
+			{
 				'name' : 'scripts',
 				'type' : 'String[]',
 				'description' : 'The set of scripts in dependency order that will be loaded.',

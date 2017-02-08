@@ -3,10 +3,19 @@
  */
 var lightningTab = {
 	'title' : 'lightning:tab',
-	'extras':'(Beta)',
+	'extras' : '(Beta)',
 	'description' : 'A single tab that is nested in a lightning:tabset component.',
 	"selected" : false,
 	'attributes' : [
+			{
+				'name' : 'aura:id',
+				'type' : 'String',
+				'description' : 'Component ID',
+				'value' : '',
+				'isRequired' : false,
+				'isMultiValued' : false,
+				'validValues' : []
+			},
 			{
 				'name' : 'accesskey',
 				'type' : 'String',
@@ -16,7 +25,7 @@ var lightningTab = {
 				'isMultiValued' : false,
 				'validValues' : []
 			},
-			
+
 			{
 				'name' : 'id',
 				'type' : 'String',
